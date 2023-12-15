@@ -1,0 +1,58 @@
+Root folder contain Node code and Client folder contain React code
+
+1. for start server command = npm run server
+2. .env is a coustom environment variable used to store sensitive credentials. PORT and mongoUrl is stored ({ way to access data = process.env.____ } PORT or MOMGO_URL) .
+3. for Mongodb connection we need to install mongoose using command = npm i mongoose
+4. stablish connection from momgoDB with the help of mongoose through mongoURL. in connectDb file  
+5. designed schema for data in user models for the user data (name,email,password)
+6. now we have to create userRoutes to perform routing with the help  of express .
+7. login and resister(signup)callback functions are created in usercontroller . and both functions are call in the router.post in userRouter.
+
+8. create react app using command = npx create-react-app clint. and run command= npm start after changing path to client.
+9. add bootstrap in public-index.html
+10. install package in client =  npm i axios react-router-dom redux react-redux
+11. create file Footer, Header, Layout, Homepage 
+12. import BrowserRouter in index.js file and put <app/> inside it so we can use route in app file
+13. install Ant design in react clint root folder by command= npm install antd
+14. design login and resister page  by using antdesign form 
+15. add proxy in clint/package.json
+16. install npm package command = npm i concurrently  and add dev(anyname) in scripts in sever/package.json file this will run both command at a same time 
+17. Command = npm run dev. this command will run both server and react concurrently.
+18. make a file spinner.js and add bootstrap code for spinner in it . and us that in login & resister page . with the help of usestate
+19. add protected routes in app.js on homepage . this will show homepage only when we get login
+
+20. create transection routes, transection model and transection controller file similar to user files.
+21. create routes for transection  just like user routes in server file.
+
+22. add model and form in homepage form antdesign 
+note:{/* name in form should same as entered  in schema model there should bhe problem in database*/}
+23. design handleSubmit and add axios.post in homepage with userid and also added spinner while adding data using usestate
+24. create getAllTransection function and call it in useEffect to get data on every load.
+
+25. create table in homepage using antdesign. get data using data schema name same as transectionmodels in column and get data in dataSource from useState alltransection. 
+26. create frequency section in homepage using select option and usestate.
+27. install moment library to handle date related operation command= npm i moment. in frontend and backend
+28. add frequency and date in transectionCtrl for filter data using useState
+29. add datapiker in hompage from antdesign for coustom filter with usestate and make changes in tensectionCtrl getAllTransection.
+30. add type filter in hompage by select option and add filter condition in transectionCtrl.
+
+31. install antdesign icons in cd/client command = npm install @ant-design/icons --save
+32. import icons in homepage and design in index.css and set onClick with active and inactive condition using viewData useState.
+33. create Analytics.js file in components
+34. table & Analytic are put in ternary operator and handle appreance using viewData useState. and passed all transection data in Analytic using props 
+35. designing Analytic.js file. applying mathematics calculation on the data that is coming from the homepage thorugh props. create transection calculations and attact on chart flow
+36. import <Progress/> from antdesign . this will show data in chart form . 
+
+37. find turnover calculations and apply on chart same as transection.
+
+38. make array of catogaries. create another row and make logic for catogary wise display data.
+
+39. now design action section edit/delete . import antdesign icon in homepage.js 
+40.   create usestate editible, add render in table column in action data and make chnges in model text and form inital value.
+41.   set data setEditable useState in render onclick icon.
+42.   create edit route in transectionRoutes.js to access editTransection functions from transectionCtrl. 
+43.   makes changes in handlesubmit in homepage.js. use if/else condition on editable usestate to add transection and update transection.
+44.   make Deletetransection function in transectionCtrl and access this in transectionroute.
+45.   make new function handleDelete in homepage.js and call it in form column anction render onclick icon.
+***************************************************************************************************************************************************************************************************
+
